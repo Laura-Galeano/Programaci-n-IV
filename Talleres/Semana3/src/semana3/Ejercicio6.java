@@ -11,15 +11,15 @@ package semana3;
  */
 public class Ejercicio6 {
     public static void main(String[] args){
-        int dias;
-        int mes;
-        int semana;
-        int horas= 3200;
+        float dias;
+        float semana;
+        float horas;
+        float tiempo = 1000;
         
-        dias= horas/24;
-        semana= dias/7;
-        mes= semana/4;
-        System.out.println(horas + " horas equivalen a: " + dias + " días," + semana + " semanas, y " + mes + " meses.");
+        semana = tiempo/(24*7);
+        dias = (semana - (int)semana)*7;
+        horas = (dias - (int)dias)*24;
+        System.out.println(tiempo + " horas equivalen a: " + (int)semana + " semanas," + (int)dias + " dias, y " + (int)horas + " horas.");
         
     }
 }

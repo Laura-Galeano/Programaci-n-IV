@@ -16,6 +16,7 @@ public class Ejercicio3 {
         int fibo2=0;
         int i;
         int solucion;
+        int resultado=0;
         int n=8;
 
         System.out.println("el fibonacci de " + n + "es: ");
@@ -25,15 +26,17 @@ public class Ejercicio3 {
                 System.out.print("1+");
                 fibo1=1;
                 fibo2=1;
+                resultado = fibo1 + fibo2;
             }
             else {
                 solucion=fibo1+fibo2;
                     System.out.print(solucion + "+" );
                     fibo1= fibo2;
                     fibo2= solucion;
-            }
-            
+                    resultado += solucion;
+            }  
         }
+        System.out.print( "=" + resultado);
        
     }
 }
